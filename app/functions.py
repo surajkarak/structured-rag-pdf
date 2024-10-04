@@ -114,7 +114,6 @@ def create_vectorstore(chunks, embedding_function, file_name, vector_store_path=
     unique_ids = set()
     unique_chunks = []
     
-    unique_chunks = [] 
     for chunk, id in zip(chunks, ids):     
         if id not in unique_ids:       
             unique_ids.add(id)
